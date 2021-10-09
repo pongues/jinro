@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+<!--
+    Copyright (c) 2021 Hiroaki Sano
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
+-->
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+	<link rel="stylesheet" href="./main.css">
+	<style>
+h2 {
+	display: inline;
+}
+.invisible {
+	display: none;
+}
+	</style>
+</head>
+<body>
+	<div class="invisible" id="play.day">
+		<h2><span id="play.day.time"></span>日目昼</h2><br><br>
+		<div class="invisible" id="play.day.before">
+			楽しい昼の始まりです<br><br>
+			<button id="play.day.before.button"><h2>次へ</h2></button>
+		</div>
+		<div class="invisible" id="play.day.act">
+			<h2 id="play.day.act.name"></h2>の番<br><br>
+			誰に投票しますか？<br><br>
+			<select id="play.day.act.select"></select><br><br>
+			<button id="play.day.act.button"><h2>次へ</h2></button>
+		</div>
+		<div class="invisible" id="play.day.after">
+			投票が終わりました<br><br>
+			<button id="play.day.after.button"><h2>次へ</h2></button>
+		</div>
+		<div class="invisible" id="play.day.res">
+			<span id="play.day.res.text"></span><br><br>
+			<button id="play.day.res.button"><h2>次へ</h2></button>
+		</div>
+	</div>
+	<div class="invisible" id="play.night">
+		<h2><span id="play.night.time"></span>日目夜</h2><br><br>
+		<div class="invisible" id="play.night.before">
+			楽しい夜の始まりです<br><br>
+			<button id="play.night.before.button"><h2>次へ</h2></button>
+		</div>
+		<div class="invisible" id="play.night.act">
+			<h2 id="play.night.act.name"></h2>の番<br><br>
+			<div class="invisible" id="play.night.act0">
+				<button id="play.night.act0.button"><h2>次へ</h2></button>
+				<div class="invisible" id="play.night.act0.confirm">
+					進みますか？
+					<button id="play.night.act0.confirm.prev"><h2>いいえ</h2></button>
+					<button id="play.night.act0.confirm.next"><h2>はい</h2></button>
+				</div>
+			</div>
+			<div class="invisible" id="play.night.act1">
+				<span id="play.night.act1.text"></span><br><br>
+				<select id="play.night.act1.select"></select><br><br>
+				<button id="play.night.act1.button"><h2>次へ</h2></button>
+			</div>
+			<div class="invisible" id="play.night.act2">
+				<button id="play.night.act2.button"><h2>次へ</h2></button>
+			</div>
+		</div>
+		<div class="invisible" id="play.night.after">
+			夜が明けました<br><br>
+			<button id="play.night.after.button"><h2>次へ</h2></button>
+		</div>
+		<div class="invisible" id="play.night.res">
+			<span id="play.night.res.text"></span><br><br>
+			<button id="play.night.res.button"><h2>次へ</h2></button>
+		</div>
+	</div>
+	<div class="invisible" id="play.res">
+		<span id="play.res.text"></span><br><br>
+	</div>
+	<script type="module" src="./play.js"></script>
+</body>
+</html>

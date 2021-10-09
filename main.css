@@ -1,0 +1,22 @@
+body {
+	word-break: break-all;
+}
+
+input {
+	/*
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	*/
+	box-shadow: none;
+	padding: 7px;
+	border: none;
+	border-bottom: solid 1px black;
+}
+
+input:invalid {
+	box-shadow: none;
+	padding: 7px;
+	border: none;
+	border-bottom: solid 1px red;
+}
